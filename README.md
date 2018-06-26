@@ -70,19 +70,3 @@ Monitor the logs of the container in realtime `docker logs -f sonarr`.
 * image version number
 
 `docker inspect -f '{{ index .Config.Labels "build_version" }}' linuxserver/sonarr`
-
-## Versions
-
-+ **15.12.17:** Fix continuation lines.
-+ **12.07.17:** Add inspect commands to README, move to jenkins build and push.
-+ **17.04.17:** Switch to using inhouse mono baseimage, adds python also.
-+ **14.04.17:** Change to mount /etc/localtime in README, thanks cbgj.
-+ **13.04.17:** Switch to official mono repository.
-+ **30.09.16:** Fix umask
-+ **23.09.16:** Add cd to /opt fixes redirects with althub (issue #25)
-, make XDG config environment variable
-+ **15.09.16:** Add libcurl3 package.
-+ **09.09.16:** Add layer badges to README.
-+ **27.08.16:** Add badges to README.
-+ **20.07.16:** Rebase to xenial.
-+ **31.08.15:** Cleanup, changed sources to fetch binarys from. also a new baseimage. 
